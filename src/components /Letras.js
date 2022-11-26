@@ -8,7 +8,7 @@ export default function Letras(){
     }
     return (
         <ul className="alphabet">
-                 {abc.map((item) => <Letter letter={item}/>  )}
+                 {abc.map((item) => <Letter letter={item}/>)}
             </ul>
     );
 }
