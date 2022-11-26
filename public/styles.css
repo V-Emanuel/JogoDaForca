@@ -1,0 +1,158 @@
+
+*{
+    box-sizing: border-box;
+}
+.App{
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+}
+.upside{
+    display: flex;
+    height: 595px;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.choose{
+    width: 200px;
+    height: 60px;
+    background-color: #27AE60;
+    border-radius: 8px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    border-color: #00fd6a;
+    margin-top: 90px;
+}
+.images{
+    width: 400px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+.forca{
+    width:400px;
+}
+.forca0{
+    position: absolute;
+    z-index: 6;
+}
+.forca1{
+    position: absolute;
+    z-index: 5;
+}
+.forca2{
+    position: absolute;
+    z-index: 4;
+}
+.forca3{
+    position: absolute;
+    z-index: 3;
+}
+.forca4{
+    position: absolute;
+    z-index: 2;
+}
+.forca5{
+    position: absolute;
+    z-index: 1;
+}
+.forca6{
+    position: absolute;
+    z-index: 0;
+}
+.downside{
+    width: 100vw;
+    height: 245px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.alphabet{
+    display: flex;
+    width: 650px;
+    height: 91px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+li{
+    width: 40px;
+    height: 40px;
+    background: #9FAAB5;
+    border: 1px solid #7AA7C7;
+    border-radius: 3px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #798A9F;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.chute{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    width: 144px;
+    height: 23px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+input{
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 353px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    border-color:  #CCCCCC;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+}
+.chutar{
+    width: 100px;
+    height: 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #E1ECF4;
+    border: 1px solid #3C76A1;
+    border-radius: 3px;
+    color : #3C76A1;
+}

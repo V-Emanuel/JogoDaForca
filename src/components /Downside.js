@@ -29,6 +29,11 @@ export default function Downside(){
                 <li>Y</li>
                 <li>Z</li>
             </ul>
+            <div className="chute">
+                <p>Já sei a palavra!</p>
+                <input type="text"/>
+                <button className="chutar">Chutar</button>
+            </div>
         </div>
     );
 }
