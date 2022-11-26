@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <div className='upside'>
+      <div className='images'>
+        <img className='forca' src='./assets/forca0.png'></img>
+        <img className='forca' src='./assets/forca1.png'></img>
+        <img className='forca' src='./assets/forca2.png'></img>
+        <img className='forca' src='./assets/forca3.png'></img>
+        <img className='forca' src='./assets/forca4.png'></img>
+        <img className='forca' src='./assets/forca5.png'></img>
+        <img className='forca' src='./assets/forca6.png'></img>
+      </div>
+      <button className='choose'>Escolher Palavra</button>
+     </div>
     </div>
   );
 }
