@@ -28,8 +28,7 @@
     font-size: 20px;
     line-height: 23px;
     color: #FFFFFF;
-    border-color: #00fd6a;
-    margin-top: 90px;
+    border-color: #00fd6a;;
 }
 .images{
     width: 400px;
@@ -155,4 +154,19 @@ input{
     border: 1px solid #3C76A1;
     border-radius: 3px;
     color : #3C76A1;
+}
+.direita{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+}
+.randomWord{
+    width: 294px;
+    height: 68px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 68px;
 }
