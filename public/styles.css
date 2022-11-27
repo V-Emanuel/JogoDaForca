@@ -11,11 +11,11 @@
 }
 .upside{
     display: flex;
-    height: 595px;
+    height: 400px;
     width: 100%;
     justify-content: space-between;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 10%;
+    padding-right: 70px;
 }
 .choose{
     width: 200px;
@@ -28,21 +28,22 @@
     font-size: 20px;
     line-height: 23px;
     color: #FFFFFF;
-    border-color: #00fd6a;;
+    border-color: #00fd6a;
+    margin-left: 100px;
 }
 .images{
-    width: 400px;
+    width: 300px;
     height: 100%;
     display: flex;
     align-items: center;
 
 }
 .forca{
-    width:400px;
+    width:300px;
 }
 .downside{
     width: 100vw;
-    height: 245px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,7 +59,6 @@
 li{
     width: 40px;
     height: 40px;
-    background: #E1ECF4;
     border: 1px solid #7AA7C7;
     border-radius: 3px;
     font-family: 'Roboto';
@@ -73,6 +73,12 @@ li{
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+.selected{
+    background-color: blueviolet;
+}
+.nSelected{
+    background: #E1ECF4;
 }
 .chute{
     width: 100%;
@@ -130,10 +136,11 @@ input{
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 470px;
     justify-content: space-around;
 }
 .randomWord{
-    width: 294px;
+    width: 100%;
     height: 68px;
     font-family: 'Noto Sans';
     font-style: normal;
@@ -141,3 +148,4 @@ input{
     font-size: 50px;
     line-height: 68px;
 }
+
