@@ -33,41 +33,12 @@
 .images{
     width: 400px;
     height: 100%;
-    position: relative;
     display: flex;
     align-items: center;
 
 }
 .forca{
     width:400px;
-}
-.forca0{
-    position: absolute;
-    z-index: 6;
-}
-.forca1{
-    position: absolute;
-    z-index: 5;
-}
-.forca2{
-    position: absolute;
-    z-index: 4;
-}
-.forca3{
-    position: absolute;
-    z-index: 3;
-}
-.forca4{
-    position: absolute;
-    z-index: 2;
-}
-.forca5{
-    position: absolute;
-    z-index: 1;
-}
-.forca6{
-    position: absolute;
-    z-index: 0;
 }
 .downside{
     width: 100vw;
