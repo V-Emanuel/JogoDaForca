@@ -9,14 +9,14 @@ import forca6 from "../assets/forca6.png"
 import palavras from "../palavras"
 let img = forca0;
 let underline = [];
-export default function Jogo() {
+export default function Jogo({word, setWord, arrayWord, setArrayWord}) {
 
-  let [word, setWord] = useState("");
-  let [arrayWord, setArrayWord] = useState([]);
   function chooseWord() {
+
     let palavraAleatoria = palavras[Math.floor(Math.random() * palavras.length)];
     setWord(palavraAleatoria);
     setArrayWord(palavraAleatoria.split(''));
+
     while(underline.length) {
       underline.pop();
    }

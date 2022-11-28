@@ -1,17 +1,21 @@
-import React from "react";
-export default function Letras() {
-    const alfabeto = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n",
-        "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-    const [selectedLetters, setSelectedLetters] = React.useState([])
+import React, { useState } from "react";
+
+export default function Letras({alfabeto, selectedLetters, setSelectedLetters}) {
     function letterClicked(letra) {
-        setSelectedLetters([...selectedLetters, letra]);
+        if(!selectedLetters.includes(letra)){
+            setSelectedLetters([...selectedLetters, letra]);
+        }   
+    }
+    function aparece(){
+        console.log(selectedLetters);
     }
     function Letter(props) {
         return (
-            <li onClick={() => letterClicked(props.letter)} 
+            <li onClick={() => letterClicked(props.letter)}
             className={`${selectedLetters.includes(props.letter) ? "selected" : "nSelected"} `}>
                 {props.letter}
             </li>
+           
         );
     }
     return (
