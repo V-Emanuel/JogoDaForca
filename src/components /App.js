@@ -10,8 +10,9 @@ export default function App() {
     "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
   const [selectedLetters, setSelectedLetters] = useState([])
   const [attempt, setAttempt] = React.useState("");
-  let rightWord = [];
+  const [rightWord, setRightWord] = useState([])
   let palavraAleatoria;
+  const [inicio, setInicio] = React.useState(1);
   const [letraclicada, setLetterClicked] = React.useState("");
   return (
     <div className="App">
@@ -21,11 +22,15 @@ export default function App() {
         arrayWord={arrayWord}
         setArrayWord={setArrayWord}
         rightWord={rightWord}
+        setRightWord={setRightWord}
         selectedLetters={selectedLetters}
+        setSelectedLetters={setSelectedLetters}
         palavraAleatoria={palavraAleatoria}
         attempt={attempt}
         setLetterClicked={setLetterClicked}
         letraclicada={letraclicada}
+        inicio={inicio}
+        setInicio={setInicio}
       />
       <div className="downside">
         <Letras
@@ -34,6 +39,8 @@ export default function App() {
           setSelectedLetters={setSelectedLetters}
           setLetterClicked={setLetterClicked}
           letraclicada={letraclicada}
+          inicio={inicio}
+          setInicio={setInicio}
         />
         <Chute 
           attempt={attempt}

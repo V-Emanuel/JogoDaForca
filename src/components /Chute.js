@@ -9,8 +9,8 @@ export default function Chute({ attempt, setAttempt,palavraAleatoria}) {
     return (
         <div className="chute">
             <p>Já sei a palavra!</p>
-            <input type="text" value={attempt} onChange={ev => setAttempt(ev.target.value)} />
-            <button className="chutar" onClick={tentativa}>Chutar</button>
+            <input data-test="guess-input" type="text" value={attempt} onChange={ev => setAttempt(ev.target.value)} />
+            <button data-test="guess-button" className="chutar" onClick={tentativa}>Chutar</button>
             <p>{attempt}</p>
         </div>
     );

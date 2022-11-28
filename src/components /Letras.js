@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function Letras({alfabeto, selectedLetters, setSelectedLetters, setLetterClicked, letraclicada}) {
+export default function Letras({alfabeto, selectedLetters, setSelectedLetters, setLetterClicked, inicio}) {
     function letterClicked(letra) {
         if(!selectedLetters.includes(letra)){
             setSelectedLetters([...selectedLetters, letra]);
@@ -15,8 +15,8 @@ export default function Letras({alfabeto, selectedLetters, setSelectedLetters, s
     }
     function Letter(props) {
         return (
-            <li onClick={() => aposClick(props.letter)}
-            className={`${selectedLetters.includes(props.letter) ? "selected" : "nSelected"} `}>
+            <li data-test="letter" onClick={() => aposClick(props.letter)}
+            className={`${selectedLetters.includes(props.letter) || selectedLetters.includes(props.letter) || inicio? "selected" : "nSelected"} `}>
                 {props.letter}
             </li>
            
