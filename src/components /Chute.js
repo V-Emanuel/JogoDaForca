@@ -1,16 +1,14 @@
 import React from "react";
-export default function Chute(){
-    const [tent, setTent] = React.useState("");
+export default function Chute({attempt, setAttempt}){
     function tentativa(){
-        console.log(tent);
-        setTent("");
+        setAttempt("");
     }
     return (
         <div className="chute">
                 <p>Já sei a palavra!</p>
-                <input type="text" value={tent} onChange={ev => setTent(ev.target.value)}/>
+                <input type="text" value={attempt} onChange={ev => setAttempt(ev.target.value)}/>
                 <button className="chutar" onClick={tentativa}>Chutar</button>
-                <p>{tent}</p>
+                <p>{attempt}</p>
             </div>
     );
 }

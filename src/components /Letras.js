@@ -6,12 +6,15 @@ export default function Letras({alfabeto, selectedLetters, setSelectedLetters}) 
             setSelectedLetters([...selectedLetters, letra]);
         }   
     }
+    function aposClick(letra){
+        letterClicked(letra);
+    }
     function aparece(){
         console.log(selectedLetters);
     }
     function Letter(props) {
         return (
-            <li onClick={() => letterClicked(props.letter)}
+            <li onClick={() => aposClick(props.letter)}
             className={`${selectedLetters.includes(props.letter) ? "selected" : "nSelected"} `}>
                 {props.letter}
             </li>

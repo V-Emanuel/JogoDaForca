@@ -8,8 +8,10 @@ import forca5 from "../assets/forca5.png"
 import forca6 from "../assets/forca6.png"
 import palavras from "../palavras"
 let img = forca0;
-let underline = [];
-export default function Jogo({word, setWord, arrayWord, setArrayWord}) {
+let cond = 0;
+let letrinha = "";
+
+export default function Jogo({word, setWord, arrayWord, setArrayWord, selectedLetters, rightWord}) {
 
   function chooseWord() {
 
@@ -17,12 +19,27 @@ export default function Jogo({word, setWord, arrayWord, setArrayWord}) {
     setWord(palavraAleatoria);
     setArrayWord(palavraAleatoria.split(''));
 
-    while(underline.length) {
-      underline.pop();
+    while(rightWord.length) {
+      rightWord.pop();
    }
     for(let i = 0; i < palavraAleatoria.length; i++){
-      underline[i] = '_ ';
+      rightWord[i] = '_ ';
     }
+  }
+
+  for(let i = 0; i < arrayWord.length; i++){
+    for(let j = 0; j < selectedLetters.length; j++){
+      if(arrayWord[i] == selectedLetters[j]){
+         cond = 1;
+         letrinha = arrayWord[i];
+      }
+    }
+    if(cond == 1){
+      rightWord[i] = arrayWord[i]; 
+    }else{
+      rightWord[i] = "_ "
+    }
+    cond = 0;
   }
 
   return (
@@ -33,7 +50,7 @@ export default function Jogo({word, setWord, arrayWord, setArrayWord}) {
       <div className="direita">
         <button className='choose' onClick={chooseWord}>Escolher Palavra</button>
         <p className="randomWord">{word}</p>
-        <p className="randomWord">{underline}</p>
+        <p className="randomWord">{rightWord}</p>
       </div>
     </div>
   );
