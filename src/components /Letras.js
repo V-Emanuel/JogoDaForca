@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 
-export default function Letras({alfabeto, selectedLetters, setSelectedLetters}) {
+export default function Letras({alfabeto, selectedLetters, setSelectedLetters, setLetterClicked, letraclicada}) {
     function letterClicked(letra) {
         if(!selectedLetters.includes(letra)){
             setSelectedLetters([...selectedLetters, letra]);
+            setLetterClicked(letra);
         }   
     }
     function aposClick(letra){

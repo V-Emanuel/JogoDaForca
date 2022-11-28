@@ -11,6 +11,8 @@ export default function App() {
   const [selectedLetters, setSelectedLetters] = useState([])
   const [attempt, setAttempt] = React.useState("");
   let rightWord = [];
+  let palavraAleatoria;
+  const [letraclicada, setLetterClicked] = React.useState("");
   return (
     <div className="App">
       <Jogo
@@ -20,21 +22,23 @@ export default function App() {
         setArrayWord={setArrayWord}
         rightWord={rightWord}
         selectedLetters={selectedLetters}
+        palavraAleatoria={palavraAleatoria}
+        attempt={attempt}
+        setLetterClicked={setLetterClicked}
+        letraclicada={letraclicada}
       />
       <div className="downside">
         <Letras
           alfabeto={alfabeto}
           selectedLetters={selectedLetters}
           setSelectedLetters={setSelectedLetters}
-          rightWord={rightWord}
-          word={word}
-          setWord={setWord}
-          arrayWord={arrayWord}
-          setArrayWord={setArrayWord}
+          setLetterClicked={setLetterClicked}
+          letraclicada={letraclicada}
         />
         <Chute 
           attempt={attempt}
           setAttempt={setAttempt}
+          palavraAleatoria={palavraAleatoria}
         />
       </div>
     </div>
