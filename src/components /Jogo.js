@@ -63,7 +63,7 @@ export default function Jogo({word, setWord, arrayWord, setArrayWord, selectedLe
   return (
     <div className='upside'>
       <div className='images'>
-        <img className='forca' src={img[erro]}></img>
+        <img className='forca' src={img[erro - 1]}></img>
       </div>
       <div className="direita">
         <button className='choose' onClick={chooseWord}>Escolher Palavra</button>
