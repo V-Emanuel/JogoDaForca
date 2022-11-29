@@ -68,7 +68,7 @@ export default function Jogo({ word, setWord, arrayWord, setArrayWord, selectedL
     }
   }
   if (cond_img == 0) {
-    erro = erro + 0.5;
+    erro = erro + 1;
   }
   cond_img = 0;
   if (erro == 8) {
